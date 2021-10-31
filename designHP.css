@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    font-family: 'Bahnschrift Light', serif;
+    font-weight: 400;
+}
+
+/*nav style*/
+header{
+    background: rgba(214, 85, 85, 0.85);
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    color: white;
+}
+
+.logo{
+    font-size: 3em;
+    margin: 0;
+    padding: 15px 0px;
+    font-family: 'Minimal', 'Bahnschrift Light', sans-serif;
+}
+
+.signin-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    font-family: 'Bahnschrift Light', sans-serif;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left:0;
+    background: rgba(214, 85, 85, 0.85);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-family: 'Bahnschrift Light', sans-serif;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out ;
+}
+
+nav a:hover{
+    color:black;
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* nav end*/
+
+.first-section{
+    width:100%;
+    height:770px;
+    background-image: url(https://images.hdqwalls.com/download/kimetsu-no-yaiba-anime-4k-yn-1280x800.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+.first-section-text{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 1em;
+    background-color: rgba(0, 0, 0, 0.46);
+    width: 480px;   
+}
+
+.second-section{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.second-section-video{
+    padding: 30px 20px 20px 30px;        
+}
+
+.gojo-domain{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.second-section-text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.second-section-text{
+    font-family: 'Bahnschrift light', sans-serif;
+    text-align: center;
+    
+}
+
+.second-section-text-btn-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.second-section-text-btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border: 2px rgba(255, 255, 255, 0.50) solid;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(https://wallpaperaccess.com/full/39038.jpg);
+    width:100%;
+    height:600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+}
+
+.third-section-box{
+    background-color: rgba(0, 0, 0, 0.75);    
+}
+
+.third-section-box-image{
+    padding: 20px;
+}
+
+
+.fourth-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.fourth-section-box1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.fourth-section-box2-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fourth-section-box2-image{
+    padding: 20px;
+}
+
+.fifth-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifth-section-box1{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    background-image: url(https://image.freepik.com/free-vector/realistic-cherry-blossom-branch-background_23-2148096902.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.fifth-section-boxes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fifth-section-box2,
+.fifth-section-box3,
+.fifth-section-box4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fifth-section-box2{
+    background-image: url(https://wallpapercave.com/wp/wp2601303.jpg);
+}
+.fifth-section-box3{
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/71/a0/83/71a0831b73b95b3f15e74f3eba14393d.jpg);
+}
+
+.fifth-section-box4{
+    background-image: url(https://wallpaperaccess.com/full/322344.jpg);
+}
+
+.fifth-section-box2-image{
+    padding: 40px;
+}
+
+.fifth-section-box2-text{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer_wrap{
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    margin:none;
+    padding: none;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer_body1_container{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    margin:none;
+    padding: none;
+    order:1;
+
+}
+.footer_body1{
+    width: 100%;
+    order:1;
+    margin:none;
+    padding: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer_body1_content{
+    float: left;
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+
+}
+.footer_logo{
+    order:2;
+    flex-grow: 1;
+}
+
+.footer_body2{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    order:2;
+}
